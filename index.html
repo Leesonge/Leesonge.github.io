@@ -1,1 +1,199 @@
-"hello" 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/font.css" />
+    <title>TODO</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="flex spaceBetween headWrap">
+        <div class="flex center">
+          <div class="headIcon center">
+            <span class="material-symbols-outlined"> menu </span>
+          </div>
+          <span class="headHome">HOME</span>
+        </div>
+        <div class="flex headRight center" >
+          <div id="weather" class="center">
+            <span></span>
+            <span class="cir"></span>
+            <span></span>
+          </div>
+          <div id="time" class="center">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        
+      </div>
+    </header>
+    <div id="bg"></div>
+
+    <section id ="section">
+      <div class="sectionInner">
+        <h1 class="title">home</h1>
+        <div id="say">
+          <span>✏</span>
+          <span></span>
+        </div>
+      </div>
+    </section>
+    <section class="content">
+      <div class="sectionInner flex spaceBetween">
+        <div class="LEFT">
+          <div class="List A">
+            <div class="listTitle">
+              Bookmark
+            </div>
+            <ul>
+              <li>
+                <a href="https://nomadcoders.co" target="_blank">
+                  <span>💻</span>
+                  <span></span>
+                  <span>노마드코더</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/" target="_blank" >
+                  <span>🎈</span>
+                  <span></span>
+                  <span>youtube</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.google.com/" target="_blank" >
+                  <span>💡</span>
+                  <span></span>
+                  <span>google</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/Leesonge" target="_blank" >
+                  <span>📁</span>
+                  <span></span>
+                  <span>github</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="List A">
+            <div class="listTitle">
+              Class
+            </div>
+            <ul>
+              <li>
+                <a href="https://nomadcoders.co/javascript-for-beginners" target="_blank" >
+                  <span>💻</span>
+                  <span></span>
+                  <span>바닐라 JS로 크롬 앱 만들기</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://nomadcoders.co/react-native-masterclass" target="_blank" >
+                  <span>📱</span>
+                  <span></span>
+                  <span>React Native 마스터클래스</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://nomadcoders.co/dart-for-beginners" target="_blank" >
+                  <span>💻</span>
+                  <span></span>
+                  <span>Dart 시작하기</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://nomadcoders.co/flutter-for-beginners" target="_blank" >
+                  <span>📱</span>
+                  <span></span>
+                  <span>Flutter 로 웹툰 앱 만들기</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://nomadcoders.co/tiktok-clone" target="_blank" >
+                  <span>📱</span>
+                  <span></span>
+                  <span>틱톡 클론코딩</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="CENTER">
+          <div class="List">
+            <div class="listTitle">
+              To - do List
+            </div>
+            <div id="TODO">
+              <form id="TodoInput">
+                <input type="text"  id=""  placeholder="today's task..." />
+               
+                <button  type="submit">
+                  <span class="material-symbols-outlined">
+                    add
+                  </span>
+                </button>
+              </form>
+              <ul id="toDoList">
+               
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="RIGHT">
+          <div class="List">
+            <div class="listTitle">
+              Time
+            </div>
+            <div id="rTime">
+              <p></p>
+              <div class="spaceBetween flex">
+                <div class="rTimeBox"></div>
+                <div class="rTimeBox"></div>
+              </div>
+            </div>
+          </div>
+          <div class="List">
+            <div class="listTitle">
+              Music
+            </div>
+            <div class="video-container">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/xRqPBkklonM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 모달 -->
+    <div id="modalBG">
+      <div id="modal">
+        <p class="modalImo">😊</p>
+        <p class="modalTitle">your name?</p>
+        <div class="nameInput-wrap">
+          <input type="text" placeholder="이름을 입력하세요" id="nameInput" />
+        </div>
+      </div>
+      
+    </div>
+    <script src="js/name.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/time.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/saying.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/timeBox.js"></script>
+</html>
